@@ -1,0 +1,181 @@
+/* ── MY CARE App + WhatsApp Phone Mockup Styles ── */
+
+/* Layout: dashboard + phone side by side */
+.care-layout{display:flex;gap:28px;margin-top:24px}
+.care-main{flex:1;min-width:0}
+.care-phone-col{width:340px;flex:none;position:sticky;top:20px;align-self:flex-start}
+
+/* Top bar */
+.care-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.care-eyebrow{font-size:10px;letter-spacing:.14em;font-weight:700;color:#75857b;margin:0 0 6px}
+.care-title{font:800 28px Manrope,sans-serif;letter-spacing:-1px;margin:0}
+.account{display:flex;align-items:center;gap:10px}
+.avatar{width:38px;height:38px;border-radius:12px;background:#e3eee7;color:#285743;display:grid;place-items:center;font:700 14px Manrope}
+.account-copy{font-size:12px;line-height:1.4}
+.account-copy strong{display:block;font-size:13px}
+
+/* Demo label */
+.demo-label{font-size:11px;color:#718077;display:flex;align-items:center;gap:7px;margin-bottom:18px}
+.proto-dot{width:6px;height:6px;background:#4c936c;border-radius:50%;display:inline-block}
+
+/* Tabs */
+.care-tabs{display:flex;gap:22px;border-bottom:1px solid #dfe4de;margin-bottom:20px}
+.care-tab{background:none;border:0;padding:0 2px 12px;font:600 13px 'DM Sans',sans-serif;color:#7e8982;cursor:pointer;position:relative}
+.care-tab.active{color:#245b49}
+.care-tab.active::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:2px;background:#245b49}
+
+/* Stats */
+.care-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.care-stat{background:#fff;border:1px solid #e7eae5;border-radius:11px;padding:16px 18px}
+.care-stat>span{display:block;font-size:9px;letter-spacing:.12em;color:#7d8981;font-weight:700;margin-bottom:10px}
+.care-stat strong{font:800 22px Manrope;display:block;letter-spacing:-.6px}
+.care-stat strong small{font-size:13px;color:#a0aaa2;font-weight:500}
+.care-progress-track{height:4px;background:#edf0ec;border-radius:9px;margin-top:10px;overflow:hidden}
+.care-progress-track i{display:block;height:100%;background:#4e876a;border-radius:9px}
+
+/* Sync label */
+.care-sync{font-size:11px;color:#43805b;display:flex;align-items:center;gap:6px;margin-bottom:16px}
+.sync-dot{width:6px;height:6px;background:#43805b;border-radius:50%;display:inline-block}
+
+/* CTA card */
+.care-cta-card{background:#f5f8f5;border:1px solid #dfe9e0;border-radius:12px;padding:22px;margin:18px 0}
+.care-cta-card h3{font:700 16px Manrope;margin:0 0 6px}
+.care-cta-card p{font-size:12px;color:#657069;margin:0 0 14px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid #b4c4b9;background:#fff;color:#245b49;font:600 12px 'DM Sans';padding:10px 16px;border-radius:7px;cursor:pointer;text-decoration:none}
+.btn.primary{background:#245b49;color:#fff;border-color:#245b49}
+.btn.primary:hover{background:#1d4d3d}
+.btn.soft{background:#e6efe9;color:#245b49;border-color:#d2e2d6}
+.btn.compact{padding:8px 12px;font-size:11px}
+.btn.danger{background:#fff;color:#b04040;border-color:#d6a5a5}
+.btn.full{width:100%}
+
+/* Check-ins list */
+.care-checkins{margin-top:16px}
+.care-checkins h3{font:700 14px Manrope;margin:0 0 10px}
+.checkin-item{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid #f0f2ee;font-size:12px;color:#4a564e}
+.checkin-item .check{color:#3c7954;font-weight:700}
+
+/* Calendar */
+.care-calendar{display:grid;grid-template-columns:repeat(10,1fr);gap:7px;margin:16px 0}
+.cal-cell{aspect-ratio:1;border-radius:6px;display:grid;place-items:center;background:#edf1ed;color:#9aa39c;font-size:11px}
+.cal-cell.done{background:#dcebe1;color:#316348}
+.cal-cell.skipped{background:#f5e6e0;color:#a0523d}
+.cal-cell.current{background:#285b48;color:#fff;box-shadow:0 0 0 3px #e0eee4}
+.cal-legend{display:flex;gap:18px;font-size:10px;color:#78837b;margin-top:4px}
+.cal-legend span{display:flex;align-items:center;gap:5px}
+.legend-done{display:inline-block;width:8px;height:8px;border-radius:3px;background:#cfe3d5}
+.legend-skip{display:inline-block;width:8px;height:8px;border-radius:3px;background:#f5e6e0}
+.legend-today{display:inline-block;width:8px;height:8px;border-radius:3px;background:#285b48}
+.legend-empty{display:inline-block;width:8px;height:8px;border-radius:3px;background:#edf1ed}
+
+/* Progress */
+.progress-photos{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0}
+.progress-photo{width:100px;border-radius:8px;overflow:hidden;border:1px solid #e5e9e3}
+.progress-photo img{width:100%;display:block}
+.progress-photo small{display:block;text-align:center;font-size:10px;padding:4px;color:#7d8981}
+.progress-checkins{margin-top:16px}
+.checkin-row{padding:10px 0;border-bottom:1px solid #f0f2ee}
+.checkin-row strong{font-size:12px}
+.checkin-row .muted{margin:4px 0 0;font-size:11px}
+
+/* Care team */
+.care-doctor{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1px solid #e7eae5;border-radius:12px;padding:20px}
+.doctor-icon{width:50px;height:50px;border-radius:50%;background:#e6efe9;color:#3c7454;display:grid;place-items:center;font-size:24px;flex:none}
+.appt-card{background:#f5f8f5;border:1px solid #dfe9e0;border-radius:8px;padding:12px;margin-top:10px}
+.concerns-list{margin-top:16px}
+.concern-item{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #f0f2ee;font-size:12px}
+.concern-item .pill{font-size:9px;background:#fce8dc;color:#a95930;padding:3px 7px;border-radius:10px}
+.concern-item.open .pill{background:#fce8dc;color:#a95930}
+.concern-item.resolved .pill{background:#e6f1e9;color:#3c7954}
+
+/* Settings */
+.care-settings{max-width:420px}
+.care-settings h3{font:700 16px Manrope;margin:0 0 14px}
+.settings-grid{display:flex;flex-direction:column;gap:12px;margin:14px 0}
+.settings-grid label{display:flex;justify-content:space-between;align-items:center;font-size:13px;background:#fff;border:1px solid #e7eae5;border-radius:8px;padding:12px 14px}
+.settings-grid input[type="checkbox"]{accent-color:#32694f}
+.settings-grid input[type="time"]{font:500 13px 'DM Sans';border:1px solid #d0d6d1;border-radius:5px;padding:6px 10px}
+
+/* ── WhatsApp Phone Mockup ── */
+.wa-phone{background:#fff;border:1px solid #dce0d9;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(28,41,37,.08);display:flex;flex-direction:column;height:540px}
+.wa-header{background:#075e54;color:#fff;padding:14px 16px;font:600 14px 'DM Sans';display:flex;align-items:center;gap:10px;flex:none}
+.wa-header small{color:#a8ddd2;font-weight:400;margin-left:4px}
+.wa-dot{width:8px;height:8px;background:#25d366;border-radius:50%}
+.wa-notif{background:#ff4444;color:#fff;font-size:9px;font-weight:700;width:16px;height:16px;border-radius:50%;display:grid;place-items:center;margin-left:auto}
+.wa-body{flex:1;overflow-y:auto;padding:12px 14px;background:#ece5dd;display:flex;flex-direction:column;gap:6px}
+.wa-body.wa-empty{justify-content:center;align-items:center;text-align:center;padding:30px;background:#f4f0eb}
+.wa-empty p{font-size:13px;color:#6b7b73;margin:0 0 16px;max-width:250px}
+.wa-msg{max-width:88%;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5;position:relative;word-wrap:break-word}
+.wa-bot{align-self:flex-start;background:#fff;border-radius:0 8px 8px 8px}
+.wa-user{align-self:flex-end;background:#dcf8c6;border-radius:8px 0 8px 8px}
+.wa-system{text-align:center;background:#fdf8e1;color:#8a7e56;font-size:10px;padding:5px 10px;border-radius:6px;align-self:center;max-width:90%}
+.wa-text{display:block}
+.wa-stamp{display:block;font-size:9px;color:#999;margin-top:4px;text-align:right}
+.wa-sample{display:block;font-size:9px;color:#b5a87a;background:#faf5e4;padding:2px 6px;border-radius:3px;margin-bottom:4px;font-style:italic}
+.wa-photo{max-width:160px;border-radius:6px;margin:6px 0;display:block}
+.wa-actions{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.wa-action{background:#e6f3ed;color:#245b49;border:1px solid #c5dece;font:600 11px 'DM Sans';padding:6px 10px;border-radius:16px;cursor:pointer}
+.wa-action:hover{background:#d4eadf}
+.wa-input{display:flex;gap:8px;padding:10px 12px;background:#f0f0f0;border-top:1px solid #dce0d9;flex:none}
+.wa-input input{flex:1;border:1px solid #cdd3ca;border-radius:20px;padding:8px 14px;font:400 12px 'DM Sans';background:#fff}
+.wa-send-btn{width:34px;height:34px;border-radius:50%;background:#075e54;color:#fff;border:0;cursor:pointer;font-size:14px;display:grid;place-items:center}
+
+/* Day dividers in chat */
+.chat-day-divider{text-align:center;padding:8px 0;margin:6px 0}
+.chat-day-divider span{background:#fdf8e1;color:#8a7e56;font-size:10px;padding:4px 10px;border-radius:10px}
+.sample-mark{display:block;font-size:9px;color:#b5a87a;font-style:italic;margin-bottom:2px}
+
+/* Journey phase notes */
+.journey-phase-note{background:#f0f6f1;border:1px solid #d6e6d9;border-radius:10px;padding:16px;margin-bottom:16px;font-size:13px}
+.journey-phase-note strong{display:block;margin-bottom:6px}
+
+/* Chat controls */
+.journey-chat-controls{display:flex;gap:8px;margin:12px 0 6px}
+.journey-chat-controls button{background:#e6efe9;color:#245b49;border:1px solid #c5dece;font:600 11px 'DM Sans';padding:6px 12px;border-radius:16px;cursor:pointer}
+.journey-chat-controls button:hover{background:#d4eadf}
+.chat-jump-hint{font-size:10px;color:#92a098;margin:0}
+
+/* ── Modal ── */
+.cm-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:999;display:grid;place-items:center;padding:20px}
+.cm-modal{background:#fff;border-radius:14px;max-width:480px;width:100%;max-height:85vh;overflow-y:auto;box-shadow:0 16px 48px rgba(0,0,0,.15)}
+.cm-head{display:flex;justify-content:space-between;align-items:flex-start;padding:22px 22px 0}
+.cm-head h2{font:800 20px Manrope;margin:0}
+.cm-close{background:none;border:0;font-size:22px;color:#999;cursor:pointer;padding:4px}
+.cm-sub{font-size:13px;color:#657069;padding:4px 22px 0;margin:0}
+.cm-body{padding:18px 22px}
+.cm-actions{padding:10px 22px 22px;display:flex;gap:10px;flex-wrap:wrap}
+
+/* Modal form fields */
+.guided-setup .field,.cm-body .field{margin-bottom:14px}
+.guided-setup label,.cm-body label{display:block;font:600 12px 'DM Sans';color:#4a564e;margin-bottom:5px}
+.guided-setup input,.guided-setup select,.guided-setup textarea,
+.cm-body input,.cm-body select,.cm-body textarea{width:100%;font:400 13px 'DM Sans';border:1px solid #d0d6d1;border-radius:6px;padding:9px 12px;background:#fff}
+.guided-setup textarea,.cm-body textarea{min-height:80px;resize:vertical}
+.check{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:#4a564e;cursor:pointer;margin:10px 0}
+.check input{accent-color:#32694f;margin-top:2px}
+.small{font-size:11px}
+.error-text{color:#b04040;font-size:11px;margin-top:6px}
+.care-ready-summary{display:flex;gap:16px;background:#f5f8f5;border:1px solid #dfe9e0;border-radius:8px;padding:14px;margin:10px 0}
+.care-ready-summary>div{flex:1}
+.care-ready-summary small{display:block;font-size:9px;letter-spacing:.1em;color:#7d8981;font-weight:700;margin-bottom:4px}
+.care-ready-summary strong{display:block;font-size:14px;margin-bottom:2px}
+.preview-line{background:#faf8f2;border:1px solid #ede8d9;border-radius:6px;padding:10px;font-size:11px;color:#7d7453;margin:10px 0}
+.guided-upload-preview{max-width:200px;border-radius:8px;margin:10px 0;display:block;border:1px solid #e5e9e3}
+.journey-milestone-input{min-height:100px!important}
+
+/* ── Responsive ── */
+@media(max-width:900px){
+  .care-layout{flex-direction:column}
+  .care-phone-col{width:100%;position:static;order:-1}
+  .wa-phone{height:420px}
+  .care-stats{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:500px){
+  .care-stats{grid-template-columns:1fr 1fr}
+  .care-stat strong{font-size:18px}
+  .wa-phone{height:380px}
+  .care-ready-summary{flex-direction:column}
+  .cm-modal{max-width:100%;margin:10px}
+}
